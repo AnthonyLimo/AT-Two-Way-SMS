@@ -5,7 +5,7 @@ const app = express();
 
 //Define Africa's Talking stuff
 const options = {
-    apiKey: '00f3f280667ec45e69aac9555056ce2b21510d99eea7cc384737c7bdfdae149e',         // use your sandbox app API key for development in the test environment
+    apiKey: 'YOUR_API_KEY_GOES_HERE',         // use your sandbox app API key for development in the test environment
     username: 'sandbox',      // use 'sandbox' for development in the test environment
 };
 const AfricasTalking = require('africastalking')(options);
@@ -17,8 +17,8 @@ app.post("/", (req,res) => {
 	const sms = AfricasTalking.SMS;
 	// all methods return a promise
 	const opts = {
-		to: '+254727545805',
-		from: '12324',
+		to: '+2547XXXXXXXX',
+		from: 'YOUR_SHORT_CODE_GOES_HERE',
 		message: 'my reply',
 	}; //Configure options for message sending
 
