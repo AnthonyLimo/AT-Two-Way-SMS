@@ -35,5 +35,5 @@ app.post("/", (req,res) => {
 //Start the server and have it listening on desired port
 
 app.listen(3000, function() {
-	console.log("Started");
+	console.log("Started at localhost 3000");
 });
